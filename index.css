@@ -1,7 +1,7 @@
 html {
   background-color: #121212;
   color: white;
-  font-family: 'Fira Code', monospace;
+  font-family: "Fira Code", monospace;
 }
 
 * {
@@ -20,7 +20,6 @@ html {
   z-index: -2;
 }
 
-
 #clock-face {
   margin: auto;
   position: absolute;
@@ -30,7 +29,7 @@ html {
   bottom: 0;
   width: 50vh;
   height: 50vh;
-  border: 1.5em solid rgb(33, 31, 58);
+  border: 1.5em solid rgb(27, 26, 46);
   border-radius: 50%;
   max-height: 100%;
   max-width: 100%;
@@ -62,7 +61,6 @@ html {
   width: 17vh;
   height: 0.3em;
   background-color: rgb(255, 196, 161);
-  
 }
 
 .second {
@@ -75,4 +73,48 @@ html {
 .animate-tick {
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0, 3.13, 0.04, 1.06);
+}
+
+.clock-ticks {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.clock-tick {
+  font-size: 1.5rem;
+  position: absolute;
+  display: block;
+}
+
+.hr12 {
+  top: 0.4rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.hr6 {
+  bottom: 0.4rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.hr9 {
+  bottom: 50%;
+  top: 45%;
+  left: 0.4rem;
+  vertical-align: middle;
+}
+
+.hr3 {
+  bottom: 50%;
+  top: 45%;
+  right: 0.4rem;
+  vertical-align: middle;
 }
