@@ -14,7 +14,7 @@ function setTime() {
   hourHand.style.transform = `rotate(${hour}deg)`;
   minuteHand.style.transform = `rotate(${minute}deg)`;
   secondHand.style.transform = `rotate(${second}deg)`;
-  timeText.innerHTML = `${prepend(time.getHours() % 12)}:${prepend(
+  timeText.innerHTML = `${formatHour(time.getHours() % 12)}:${prepend(
     time.getMinutes()
   )}:${prepend(time.getSeconds())}`;
   if (second == 264 || second == -90) {
@@ -30,4 +30,10 @@ function setTime() {
 
 function prepend(num) {
   return (num < 10 ? "0" : "") + num;
+}
+
+function formatHour(hour) {
+  if (hour == 0) {
+    return 12;
+  } else return prepend(hour);
 }
