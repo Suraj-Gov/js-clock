@@ -1,6 +1,6 @@
 html {
   background-color: #121212;
-  color: white;
+  color: rgb(99, 95, 168);
   font-family: "Fira Code", monospace;
 }
 
@@ -117,4 +117,39 @@ html {
   top: 45%;
   right: 0.4rem;
   vertical-align: middle;
+}
+
+.clock-dots {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.clock-dots > .clock-dot:nth-child(1) {
+  position: absolute;
+  display: block;
+  right: 27%;
+  top: 10%;
+  bottom: 0;
+}
+
+.clock-dots > .clock-dot:nth-child(2) {
+  display: block;
+  position: absolute;
+  right: 11%;
+  top: 25.5%;
+  bottom: 0;
+}
+
+.clock-dots:nth-child(2) {
+  transform: scaleY(-1);
+}
+
+.clock-dots:nth-child(3) {
+  transform: scaleX(-1);
+}
+
+.clock-dots:nth-child(4) {
+  transform: scaleX(-1);
+  transform: rotateZ(-180deg);
 }
