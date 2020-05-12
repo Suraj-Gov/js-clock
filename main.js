@@ -17,13 +17,13 @@ function setTime() {
   timeText.innerHTML = `${formatHour(time.getHours() % 12)}:${prepend(
     time.getMinutes()
   )}:${prepend(time.getSeconds())}`;
-  if (second >= 264 && second <= -90) {
+  if (second == 264 || second == -90) {
     secondHand.style.transition = "none";
   } else secondHand.style.transition = "all 0.05s";
-  if (minute >= 264 && minute <= -90) {
+  if (minute == 264 || minute == -90) {
     minuteHand.style.transition = "none";
   } else minuteHand.style.transition = "all 0.05s";
-  if (hour >= 264 && hour <= -90) {
+  if (hour == 264 || hour == -90) {
     hourHand.style.transition = "none";
   } else hourHand.style.transition = "all 0.05s";
 }
