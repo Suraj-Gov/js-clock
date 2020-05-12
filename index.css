@@ -27,8 +27,8 @@ html {
   right: 0;
   left: 0;
   bottom: 0;
-  width: 23em;
-  height: 23em;
+  width: 50vh;
+  height: 50vh;
   border: 1.5em solid rgb(27, 26, 46);
   border-radius: 50%;
   max-height: 100%;
@@ -42,7 +42,7 @@ html {
   left: 50%;
   margin: 0 auto;
   transform-origin: 0% 50%;
-  border-radius: 1rem;
+  border-radius: 1em;
 }
 
 .animate-ease-in-out {
@@ -51,21 +51,21 @@ html {
 }
 
 .hour {
-  width: 5rem;
-  height: 0.4rem;
+  width: 15vh;
+  height: 0.4em;
   background-color: rgb(255, 82, 82);
   transform: rotate(20deg);
 }
 
 .minute {
-  width: 7rem;
-  height: 0.3rem;
+  width: 17vh;
+  height: 0.3em;
   background-color: rgb(255, 196, 161);
 }
 
 .second {
-  width: 8rem;
-  height: 0.2rem;
+  width: 20vh;
+  height: 0.2em;
   background-color: rgb(101, 250, 255);
   transition-timing-function: cubic-bezier(0, 3.13, 0.04, 1.06);
 }
@@ -108,14 +108,14 @@ html {
 .hr9 {
   bottom: 50%;
   top: 45%;
-  left: 0.6rem;
+  left: 0.4rem;
   vertical-align: middle;
 }
 
 .hr3 {
   bottom: 50%;
   top: 45%;
-  right: 0.6rem;
+  right: 0.4rem;
   vertical-align: middle;
 }
 
